@@ -1,0 +1,71 @@
+#%RAML 1.0
+title: products
+
+/products:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "id": 10,
+                "name": "Coke",
+                "price": 5
+              }
+  /{id}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: 
+                {
+                  "id": 10,
+                  "name": "Coke",
+                  "price": 5
+                }
+    put:
+      responses:
+        200:
+          body:
+            application/json:
+                example:
+                  {
+                   "id": 10,
+                    "name": "Coke",
+                  "price": 5
+                  }
+     
+    delete:
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                {
+                  "message":"product deleted"
+
+                }
+
+
+
+  post:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "id": 10,
+                  "name": "Coke",
+                  "price": 5
+                }
+            
+    
+    
+               
+                
+            
+      
+
